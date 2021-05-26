@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Proj.Gerenciamento_de_Salas
 {
-    public partial class Pag_Login : Form
+    public partial class Pag_Menu : Form
     {
-        public Pag_Login()
+        public Pag_Menu()
         {
             InitializeComponent();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
