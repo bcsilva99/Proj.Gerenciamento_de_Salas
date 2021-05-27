@@ -123,6 +123,9 @@
     <EmbeddedResource Include="Pag_CadastroUsuario.resx">
       <DependentUpon>Pag_CadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pag_CalendarioMarcacao.resx">
+      <DependentUpon>Pag_CalendarioMarcacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pag_Login.resx">
       <DependentUpon>Pag_Login.cs</DependentUpon>
     </EmbeddedResource>
