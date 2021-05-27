@@ -37,7 +37,7 @@ namespace Proj.Gerenciamento_de_Salas
             // txt_Senha
             // 
             this.txt_Senha.Location = new System.Drawing.Point(367, 190);
-            this.txt_Senha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Senha.Name = "txt_Senha";
             this.txt_Senha.Size = new System.Drawing.Size(252, 22);
             this.txt_Senha.TabIndex = 1;
@@ -46,7 +46,7 @@ namespace Proj.Gerenciamento_de_Salas
             // btn_Login
             // 
             this.btn_Login.Location = new System.Drawing.Point(405, 482);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(172, 28);
             this.btn_Login.TabIndex = 2;
@@ -69,12 +69,13 @@ namespace Proj.Gerenciamento_de_Salas
             this.Controls.Add(this.txt_Login);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txt_Senha);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Pag_Login";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Pag_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

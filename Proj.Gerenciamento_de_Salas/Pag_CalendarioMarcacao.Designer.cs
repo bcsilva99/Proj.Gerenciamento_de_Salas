@@ -34,7 +34,7 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(533, 93);
+            this.button1.Location = new System.Drawing.Point(572, 23);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 23);
             this.button1.TabIndex = 0;

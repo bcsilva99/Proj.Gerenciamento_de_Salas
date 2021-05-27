@@ -21,5 +21,10 @@ namespace Proj.Gerenciamento_de_Salas
         {
 
         }
+
+        private void Pag_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

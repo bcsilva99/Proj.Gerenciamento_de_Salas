@@ -132,6 +132,9 @@
     <EmbeddedResource Include="Pag_Menu.resx">
       <DependentUpon>Pag_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pag_QuantidadeSalas.resx">
+      <DependentUpon>Pag_QuantidadeSalas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pag_RegistroAluno.resx">
       <DependentUpon>Pag_RegistroAluno.cs</DependentUpon>
     </EmbeddedResource>
