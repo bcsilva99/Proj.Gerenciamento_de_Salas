@@ -16,5 +16,15 @@ namespace Proj.Gerenciamento_de_Salas
         {
             InitializeComponent();
         }
+
+        private void txt_PesquisaAluno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_BuscaAluno_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
