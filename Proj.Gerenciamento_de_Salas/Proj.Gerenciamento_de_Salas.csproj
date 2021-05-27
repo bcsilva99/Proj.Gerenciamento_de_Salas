@@ -120,6 +120,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pag_CadastroUsuario.resx">
+      <DependentUpon>Pag_CadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pag_Login.resx">
       <DependentUpon>Pag_Login.cs</DependentUpon>
     </EmbeddedResource>
