@@ -46,6 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pag_AdicionarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_AdicionarAluno.Designer.cs">
+      <DependentUpon>Pag_AdicionarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_AlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_AlterarSenha.Designer.cs">
+      <DependentUpon>Pag_AlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_CadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_CadastroUsuario.Designer.cs">
+      <DependentUpon>Pag_CadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_CalendarioMarcacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_CalendarioMarcacao.Designer.cs">
+      <DependentUpon>Pag_CalendarioMarcacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_Configuracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_Configuracao.Designer.cs">
+      <DependentUpon>Pag_Configuracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_EditarMarcacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_EditarMarcacao.Designer.cs">
+      <DependentUpon>Pag_EditarMarcacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_EditarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_EditarPaciente.Designer.cs">
+      <DependentUpon>Pag_EditarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pag_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +99,24 @@
     </Compile>
     <Compile Include="Pag_Menu.Designer.cs">
       <DependentUpon>Pag_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_NovaMarcacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_NovaMarcacao.Designer.cs">
+      <DependentUpon>Pag_NovaMarcacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_QuantidadeSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_QuantidadeSalas.Designer.cs">
+      <DependentUpon>Pag_QuantidadeSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pag_RegistroAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pag_RegistroAluno.Designer.cs">
+      <DependentUpon>Pag_RegistroAluno.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
