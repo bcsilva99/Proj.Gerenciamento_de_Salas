@@ -49,6 +49,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Controls.Add(this.button1);
             this.Name = "Pag_CalendarioMarcacao";
             this.Text = "Pag_CalendarioMarcacao";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

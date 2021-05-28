@@ -92,6 +92,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Controls.Add(this.dataGridView1);
             this.Name = "Pag_QuantidadeSalas";
             this.Text = "Pag_QuantidadeSalas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

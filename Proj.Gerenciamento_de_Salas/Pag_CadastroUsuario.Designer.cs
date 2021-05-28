@@ -34,19 +34,22 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 85);
+            this.textBox1.Location = new System.Drawing.Point(117, 105);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(370, 20);
+            this.textBox1.Size = new System.Drawing.Size(492, 22);
             this.textBox1.TabIndex = 0;
             // 
             // Pag_CadastroUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Pag_CadastroUsuario";
             this.Text = "Pag_CadastroUsuario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
