@@ -49,6 +49,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btn_AbreTela1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Pag_Menu";
             this.Text = "Pag_Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

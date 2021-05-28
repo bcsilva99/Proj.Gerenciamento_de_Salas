@@ -47,6 +47,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.textBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "Pag_CadastroUsuario";
             this.Text = "Pag_CadastroUsuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

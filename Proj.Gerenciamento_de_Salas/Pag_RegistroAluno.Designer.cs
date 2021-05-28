@@ -48,7 +48,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.ctn_CaixaDePesquisa.Controls.Add(this.btn_BuscaAluno);
             this.ctn_CaixaDePesquisa.Controls.Add(this.txt_PesquisaAluno);
             this.ctn_CaixaDePesquisa.Location = new System.Drawing.Point(81, 36);
-            this.ctn_CaixaDePesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ctn_CaixaDePesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.ctn_CaixaDePesquisa.Name = "ctn_CaixaDePesquisa";
             this.ctn_CaixaDePesquisa.Size = new System.Drawing.Size(644, 36);
             this.ctn_CaixaDePesquisa.TabIndex = 0;
@@ -56,7 +56,7 @@ namespace Proj.Gerenciamento_de_Salas
             // btn_BuscaAluno
             // 
             this.btn_BuscaAluno.Location = new System.Drawing.Point(560, 9);
-            this.btn_BuscaAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BuscaAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BuscaAluno.Name = "btn_BuscaAluno";
             this.btn_BuscaAluno.Size = new System.Drawing.Size(80, 23);
             this.btn_BuscaAluno.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace Proj.Gerenciamento_de_Salas
             // txt_PesquisaAluno
             // 
             this.txt_PesquisaAluno.Location = new System.Drawing.Point(4, 7);
-            this.txt_PesquisaAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_PesquisaAluno.Margin = new System.Windows.Forms.Padding(4);
             this.txt_PesquisaAluno.Name = "txt_PesquisaAluno";
             this.txt_PesquisaAluno.Size = new System.Drawing.Size(547, 22);
             this.txt_PesquisaAluno.TabIndex = 0;
@@ -82,7 +82,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Col_Identificacao,
             this.Col_Contato});
             this.dataGridView1.Location = new System.Drawing.Point(81, 79);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -119,7 +119,7 @@ namespace Proj.Gerenciamento_de_Salas
             // btn_ExcluirAluno
             // 
             this.btn_ExcluirAluno.Location = new System.Drawing.Point(423, 511);
-            this.btn_ExcluirAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ExcluirAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ExcluirAluno.Name = "btn_ExcluirAluno";
             this.btn_ExcluirAluno.Size = new System.Drawing.Size(167, 25);
             this.btn_ExcluirAluno.TabIndex = 2;
@@ -129,7 +129,7 @@ namespace Proj.Gerenciamento_de_Salas
             // btn_AdicionarAluno
             // 
             this.btn_AdicionarAluno.Location = new System.Drawing.Point(773, 511);
-            this.btn_AdicionarAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AdicionarAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AdicionarAluno.Name = "btn_AdicionarAluno";
             this.btn_AdicionarAluno.Size = new System.Drawing.Size(167, 25);
             this.btn_AdicionarAluno.TabIndex = 3;
@@ -139,7 +139,7 @@ namespace Proj.Gerenciamento_de_Salas
             // btn_EditarAluno
             // 
             this.btn_EditarAluno.Location = new System.Drawing.Point(597, 511);
-            this.btn_EditarAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_EditarAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btn_EditarAluno.Name = "btn_EditarAluno";
             this.btn_EditarAluno.Size = new System.Drawing.Size(167, 25);
             this.btn_EditarAluno.TabIndex = 4;
@@ -156,7 +156,8 @@ namespace Proj.Gerenciamento_de_Salas
             this.Controls.Add(this.btn_ExcluirAluno);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ctn_CaixaDePesquisa);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Pag_RegistroAluno";
             this.Text = "Pag_RegistroAluno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

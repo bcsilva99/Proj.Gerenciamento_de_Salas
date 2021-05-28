@@ -90,6 +90,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Controls.Add(this.btn_adicionarsala);
             this.Controls.Add(this.btn_editarsala);
             this.Controls.Add(this.dataGridView1);
+            this.MaximizeBox = false;
             this.Name = "Pag_QuantidadeSalas";
             this.Text = "Pag_QuantidadeSalas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
