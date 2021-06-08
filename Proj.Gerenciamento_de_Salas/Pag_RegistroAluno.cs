@@ -26,5 +26,32 @@ namespace Proj.Gerenciamento_de_Salas
         {
 
         }
+
+        private void btn_AdicionarAluno_Click(object sender, EventArgs e)
+        {
+            Pag_AdicionarAluno adicionarAluno = new Pag_AdicionarAluno();
+            this.Hide();
+            adicionarAluno.Show();
+        }
+
+        private void btn_EditarAluno_Click(object sender, EventArgs e)
+        {
+            String nome = txt_PesquisaAluno.Text;
+            Pag_AdicionarAluno editaAluno = new Pag_AdicionarAluno(nome);
+            this.Hide();
+            editaAluno.Show();
+        }
+
+        private void btn_Menu_Click(object sender, EventArgs e)
+        {
+            Pag_Menu menu = new Pag_Menu();
+            this.Hide();
+            menu.Show();
+        }
+
+        private void Pag_RegistroAluno_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

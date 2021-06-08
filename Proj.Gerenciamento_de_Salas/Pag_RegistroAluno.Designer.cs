@@ -39,6 +39,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.btn_ExcluirAluno = new System.Windows.Forms.Button();
             this.btn_AdicionarAluno = new System.Windows.Forms.Button();
             this.btn_EditarAluno = new System.Windows.Forms.Button();
+            this.btn_Menu = new System.Windows.Forms.Button();
             this.ctn_CaixaDePesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -47,18 +48,16 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             this.ctn_CaixaDePesquisa.Controls.Add(this.btn_BuscaAluno);
             this.ctn_CaixaDePesquisa.Controls.Add(this.txt_PesquisaAluno);
-            this.ctn_CaixaDePesquisa.Location = new System.Drawing.Point(81, 36);
-            this.ctn_CaixaDePesquisa.Margin = new System.Windows.Forms.Padding(4);
+            this.ctn_CaixaDePesquisa.Location = new System.Drawing.Point(61, 29);
             this.ctn_CaixaDePesquisa.Name = "ctn_CaixaDePesquisa";
-            this.ctn_CaixaDePesquisa.Size = new System.Drawing.Size(644, 36);
+            this.ctn_CaixaDePesquisa.Size = new System.Drawing.Size(483, 29);
             this.ctn_CaixaDePesquisa.TabIndex = 0;
             // 
             // btn_BuscaAluno
             // 
-            this.btn_BuscaAluno.Location = new System.Drawing.Point(560, 9);
-            this.btn_BuscaAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_BuscaAluno.Location = new System.Drawing.Point(420, 7);
             this.btn_BuscaAluno.Name = "btn_BuscaAluno";
-            this.btn_BuscaAluno.Size = new System.Drawing.Size(80, 23);
+            this.btn_BuscaAluno.Size = new System.Drawing.Size(60, 19);
             this.btn_BuscaAluno.TabIndex = 1;
             this.btn_BuscaAluno.Text = "Pesquisa";
             this.btn_BuscaAluno.UseVisualStyleBackColor = true;
@@ -66,10 +65,9 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // txt_PesquisaAluno
             // 
-            this.txt_PesquisaAluno.Location = new System.Drawing.Point(4, 7);
-            this.txt_PesquisaAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_PesquisaAluno.Location = new System.Drawing.Point(3, 6);
             this.txt_PesquisaAluno.Name = "txt_PesquisaAluno";
-            this.txt_PesquisaAluno.Size = new System.Drawing.Size(547, 22);
+            this.txt_PesquisaAluno.Size = new System.Drawing.Size(411, 20);
             this.txt_PesquisaAluno.TabIndex = 0;
             this.txt_PesquisaAluno.TextChanged += new System.EventHandler(this.txt_PesquisaAluno_TextChanged);
             // 
@@ -81,12 +79,11 @@ namespace Proj.Gerenciamento_de_Salas
             this.Col_Nome,
             this.Col_Identificacao,
             this.Col_Contato});
-            this.dataGridView1.Location = new System.Drawing.Point(81, 79);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(61, 64);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(859, 412);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 335);
             this.dataGridView1.TabIndex = 1;
             // 
             // Col_Nome
@@ -118,49 +115,59 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_ExcluirAluno
             // 
-            this.btn_ExcluirAluno.Location = new System.Drawing.Point(423, 511);
-            this.btn_ExcluirAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ExcluirAluno.Location = new System.Drawing.Point(317, 415);
             this.btn_ExcluirAluno.Name = "btn_ExcluirAluno";
-            this.btn_ExcluirAluno.Size = new System.Drawing.Size(167, 25);
+            this.btn_ExcluirAluno.Size = new System.Drawing.Size(125, 20);
             this.btn_ExcluirAluno.TabIndex = 2;
             this.btn_ExcluirAluno.Text = "Excluir";
             this.btn_ExcluirAluno.UseVisualStyleBackColor = true;
             // 
             // btn_AdicionarAluno
             // 
-            this.btn_AdicionarAluno.Location = new System.Drawing.Point(773, 511);
-            this.btn_AdicionarAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AdicionarAluno.Location = new System.Drawing.Point(580, 415);
             this.btn_AdicionarAluno.Name = "btn_AdicionarAluno";
-            this.btn_AdicionarAluno.Size = new System.Drawing.Size(167, 25);
+            this.btn_AdicionarAluno.Size = new System.Drawing.Size(125, 20);
             this.btn_AdicionarAluno.TabIndex = 3;
             this.btn_AdicionarAluno.Text = "Adicionar";
             this.btn_AdicionarAluno.UseVisualStyleBackColor = true;
+            this.btn_AdicionarAluno.Click += new System.EventHandler(this.btn_AdicionarAluno_Click);
             // 
             // btn_EditarAluno
             // 
-            this.btn_EditarAluno.Location = new System.Drawing.Point(597, 511);
-            this.btn_EditarAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_EditarAluno.Location = new System.Drawing.Point(448, 415);
             this.btn_EditarAluno.Name = "btn_EditarAluno";
-            this.btn_EditarAluno.Size = new System.Drawing.Size(167, 25);
+            this.btn_EditarAluno.Size = new System.Drawing.Size(125, 20);
             this.btn_EditarAluno.TabIndex = 4;
             this.btn_EditarAluno.Text = "Editar";
             this.btn_EditarAluno.UseVisualStyleBackColor = true;
+            this.btn_EditarAluno.Click += new System.EventHandler(this.btn_EditarAluno_Click);
+            // 
+            // btn_Menu
+            // 
+            this.btn_Menu.Location = new System.Drawing.Point(663, 12);
+            this.btn_Menu.Name = "btn_Menu";
+            this.btn_Menu.Size = new System.Drawing.Size(125, 20);
+            this.btn_Menu.TabIndex = 5;
+            this.btn_Menu.Text = "Voltar ao Menu";
+            this.btn_Menu.UseVisualStyleBackColor = true;
+            this.btn_Menu.Click += new System.EventHandler(this.btn_Menu_Click);
             // 
             // Pag_RegistroAluno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Menu);
             this.Controls.Add(this.btn_EditarAluno);
             this.Controls.Add(this.btn_AdicionarAluno);
             this.Controls.Add(this.btn_ExcluirAluno);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ctn_CaixaDePesquisa);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Pag_RegistroAluno";
             this.Text = "Pag_RegistroAluno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_RegistroAluno_FormClosing);
             this.ctn_CaixaDePesquisa.ResumeLayout(false);
             this.ctn_CaixaDePesquisa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -180,5 +187,6 @@ namespace Proj.Gerenciamento_de_Salas
         private System.Windows.Forms.Button btn_ExcluirAluno;
         private System.Windows.Forms.Button btn_AdicionarAluno;
         private System.Windows.Forms.Button btn_EditarAluno;
+        private System.Windows.Forms.Button btn_Menu;
     }
 }

@@ -29,21 +29,37 @@ namespace Proj.Gerenciamento_de_Salas
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_Voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btn_Voltar
+            // 
+            this.btn_Voltar.Location = new System.Drawing.Point(469, 12);
+            this.btn_Voltar.Name = "btn_Voltar";
+            this.btn_Voltar.Size = new System.Drawing.Size(119, 34);
+            this.btn_Voltar.TabIndex = 1;
+            this.btn_Voltar.Text = "Voltar";
+            this.btn_Voltar.UseVisualStyleBackColor = true;
+            this.btn_Voltar.Click += new System.EventHandler(this.btn_Voltar_Click);
             // 
             // Pag_EditarPaciente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btn_Voltar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Pag_EditarPaciente";
             this.Text = "Pag_EditarPaciente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_EditarPaciente_FormClosing);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_Voltar;
     }
 }
