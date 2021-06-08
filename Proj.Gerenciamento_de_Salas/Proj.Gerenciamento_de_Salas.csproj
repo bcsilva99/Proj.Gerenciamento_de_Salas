@@ -76,12 +76,6 @@
     <Compile Include="Pag_Configuracao.Designer.cs">
       <DependentUpon>Pag_Configuracao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pag_EditarMarcacao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pag_EditarMarcacao.Designer.cs">
-      <DependentUpon>Pag_EditarMarcacao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pag_EditarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pag_Configuracao.resx">
       <DependentUpon>Pag_Configuracao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pag_EditarMarcacao.resx">
-      <DependentUpon>Pag_EditarMarcacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pag_EditarPaciente.resx">
       <DependentUpon>Pag_EditarPaciente.cs</DependentUpon>

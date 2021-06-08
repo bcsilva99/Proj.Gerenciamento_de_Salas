@@ -44,5 +44,10 @@ namespace Proj.Gerenciamento_de_Salas
             this.Hide();
             login.Show();
         }
+
+        private void Pag_Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

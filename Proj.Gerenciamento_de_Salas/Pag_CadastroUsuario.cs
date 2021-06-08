@@ -16,5 +16,17 @@ namespace Proj.Gerenciamento_de_Salas
         {
             InitializeComponent();
         }
+
+        private void btn_Voltar_Click(object sender, EventArgs e)
+        {
+            Pag_Configuracao configuracao = new Pag_Configuracao();
+            this.Hide();
+            configuracao.Show();
+        }
+
+        private void Pag_CadastroUsuario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

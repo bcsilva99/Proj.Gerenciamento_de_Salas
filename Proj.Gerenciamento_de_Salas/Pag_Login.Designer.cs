@@ -33,9 +33,9 @@ namespace Proj.Gerenciamento_de_Salas
             this.btn_Login = new System.Windows.Forms.Button();
             this.txt_Login = new System.Windows.Forms.TextBox();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.btn_EsqueciSenha = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_EsqueciSenha = new System.Windows.Forms.Button();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@ namespace Proj.Gerenciamento_de_Salas
             // txt_Login
             // 
             this.txt_Login.Location = new System.Drawing.Point(125, 55);
-            this.txt_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Login.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Login.Name = "txt_Login";
             this.txt_Login.Size = new System.Drawing.Size(273, 20);
             this.txt_Login.TabIndex = 3;
@@ -76,10 +76,19 @@ namespace Proj.Gerenciamento_de_Salas
             this.panelLogin.Controls.Add(this.btn_Login);
             this.panelLogin.Controls.Add(this.txt_Senha);
             this.panelLogin.Location = new System.Drawing.Point(154, 53);
-            this.panelLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLogin.Margin = new System.Windows.Forms.Padding(2);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(400, 348);
             this.panelLogin.TabIndex = 4;
+            // 
+            // btn_EsqueciSenha
+            // 
+            this.btn_EsqueciSenha.Location = new System.Drawing.Point(4, 321);
+            this.btn_EsqueciSenha.Name = "btn_EsqueciSenha";
+            this.btn_EsqueciSenha.Size = new System.Drawing.Size(129, 23);
+            this.btn_EsqueciSenha.TabIndex = 6;
+            this.btn_EsqueciSenha.Text = "Esqueci a Senha";
+            this.btn_EsqueciSenha.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -103,15 +112,6 @@ namespace Proj.Gerenciamento_de_Salas
             this.label1.TabIndex = 4;
             this.label1.Text = "Usuário:";
             // 
-            // btn_EsqueciSenha
-            // 
-            this.btn_EsqueciSenha.Location = new System.Drawing.Point(4, 321);
-            this.btn_EsqueciSenha.Name = "btn_EsqueciSenha";
-            this.btn_EsqueciSenha.Size = new System.Drawing.Size(129, 23);
-            this.btn_EsqueciSenha.TabIndex = 6;
-            this.btn_EsqueciSenha.Text = "Esqueci a Senha";
-            this.btn_EsqueciSenha.UseVisualStyleBackColor = true;
-            // 
             // Pag_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,6 +123,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Name = "Pag_Login";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_Login_FormClosing);
             this.Load += new System.EventHandler(this.Pag_Login_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();

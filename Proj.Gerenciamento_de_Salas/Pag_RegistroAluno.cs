@@ -48,5 +48,10 @@ namespace Proj.Gerenciamento_de_Salas
             this.Hide();
             menu.Show();
         }
+
+        private void Pag_RegistroAluno_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

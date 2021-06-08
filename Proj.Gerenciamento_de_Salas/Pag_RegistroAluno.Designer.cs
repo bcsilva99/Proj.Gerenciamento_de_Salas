@@ -167,6 +167,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Name = "Pag_RegistroAluno";
             this.Text = "Pag_RegistroAluno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_RegistroAluno_FormClosing);
             this.ctn_CaixaDePesquisa.ResumeLayout(false);
             this.ctn_CaixaDePesquisa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

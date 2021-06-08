@@ -88,6 +88,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Name = "Pag_Menu";
             this.Text = "Pag_Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_Menu_FormClosing);
             this.ResumeLayout(false);
 
         }

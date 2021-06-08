@@ -26,7 +26,8 @@ namespace Proj.Gerenciamento_de_Salas
 
         private void btn_EditarMarcacao_Click(object sender, EventArgs e)
         {
-            Pag_EditarMarcacao editarMarcacao = new Pag_EditarMarcacao();
+            String chaveBusca = tbl_Calendario.SelectedRows.ToString();
+            Pag_NovaMarcacao editarMarcacao = new Pag_NovaMarcacao(chaveBusca);
             this.Hide();
             editarMarcacao.Show();
         }
@@ -43,6 +44,16 @@ namespace Proj.Gerenciamento_de_Salas
             Pag_Menu menu = new Pag_Menu();
             this.Hide();
             menu.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Pag_CalendarioMarcacao_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

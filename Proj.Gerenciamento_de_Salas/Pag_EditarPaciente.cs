@@ -16,5 +16,17 @@ namespace Proj.Gerenciamento_de_Salas
         {
             InitializeComponent();
         }
+
+        private void btn_Voltar_Click(object sender, EventArgs e)
+        {
+            Pag_CalendarioMarcacao calendarioMarcacao = new Pag_CalendarioMarcacao();
+            this.Hide();
+            calendarioMarcacao.Show();
+        }
+
+        private void Pag_EditarPaciente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
