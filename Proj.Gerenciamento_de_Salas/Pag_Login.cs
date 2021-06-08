@@ -17,20 +17,10 @@ namespace Proj.Gerenciamento_de_Salas
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Pag_Login_Load(object sender, EventArgs e)
         {
             panelLogin.Location = new Point((this.Width / 2) - 267, (this.Height / 2) - 214);
-        }
-
-        private void txt_Login_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         private void btn_Login_Click(object sender, EventArgs e)
         {

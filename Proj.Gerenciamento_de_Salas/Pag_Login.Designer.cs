@@ -45,8 +45,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.txt_Senha.Name = "txt_Senha";
             this.txt_Senha.PasswordChar = '*';
             this.txt_Senha.Size = new System.Drawing.Size(273, 20);
-            this.txt_Senha.TabIndex = 1;
-            this.txt_Senha.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txt_Senha.TabIndex = 1;            
             // 
             // btn_Login
             // 
@@ -64,8 +63,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.txt_Login.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Login.Name = "txt_Login";
             this.txt_Login.Size = new System.Drawing.Size(273, 20);
-            this.txt_Login.TabIndex = 3;
-            this.txt_Login.TextChanged += new System.EventHandler(this.txt_Login_TextChanged);
+            this.txt_Login.TabIndex = 3;           
             // 
             // panelLogin
             // 
@@ -79,7 +77,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.panelLogin.Margin = new System.Windows.Forms.Padding(2);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(400, 348);
-            this.panelLogin.TabIndex = 4;
+            this.panelLogin.TabIndex = 4;           
             // 
             // btn_EsqueciSenha
             // 

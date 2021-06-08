@@ -11,21 +11,12 @@ using System.Windows.Forms;
 namespace Proj.Gerenciamento_de_Salas
 {
     public partial class Pag_RegistroAluno : Form
-    {
+    {       
+
         public Pag_RegistroAluno()
         {
             InitializeComponent();
-        }
-
-        private void txt_PesquisaAluno_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_BuscaAluno_Click(object sender, EventArgs e)
-        {
-
-        }
+        } 
 
         private void btn_AdicionarAluno_Click(object sender, EventArgs e)
         {
@@ -52,6 +43,14 @@ namespace Proj.Gerenciamento_de_Salas
         private void Pag_RegistroAluno_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Pag_RegistroAluno_Load(object sender, EventArgs e)
+        {
+            tblL_botões.Location = new Point(this.Width * 60 / 100, this.Height * 80 / 100);       
+            Grid_RegistroAluno.Size = new Size(this.Width * 90/100, this.Height * 70/100);
+            btn_Menu.Location = new Point(this.Width * 80 / 100, 30);
+
         }
     }
 }

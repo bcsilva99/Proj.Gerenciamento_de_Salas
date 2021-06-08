@@ -30,46 +30,34 @@ namespace Proj.Gerenciamento_de_Salas
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.n_Sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo_Sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_editarsala = new System.Windows.Forms.Button();
             this.btn_adicionarsala = new System.Windows.Forms.Button();
             this.btn_Voltar = new System.Windows.Forms.Button();
+            this.n_Sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo_Sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.n_Sala,
             this.Tipo_Sala});
             this.dataGridView1.Location = new System.Drawing.Point(9, 54);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(582, 241);
             this.dataGridView1.TabIndex = 0;
             // 
-            // n_Sala
-            // 
-            this.n_Sala.HeaderText = "Nº sala";
-            this.n_Sala.MinimumWidth = 6;
-            this.n_Sala.Name = "n_Sala";
-            this.n_Sala.Width = 125;
-            // 
-            // Tipo_Sala
-            // 
-            this.Tipo_Sala.HeaderText = "Tipo da sala";
-            this.Tipo_Sala.MinimumWidth = 6;
-            this.Tipo_Sala.Name = "Tipo_Sala";
-            this.Tipo_Sala.Width = 125;
-            // 
             // btn_editarsala
             // 
             this.btn_editarsala.Location = new System.Drawing.Point(532, 319);
-            this.btn_editarsala.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_editarsala.Margin = new System.Windows.Forms.Padding(2);
             this.btn_editarsala.Name = "btn_editarsala";
             this.btn_editarsala.Size = new System.Drawing.Size(114, 19);
             this.btn_editarsala.TabIndex = 1;
@@ -79,7 +67,7 @@ namespace Proj.Gerenciamento_de_Salas
             // btn_adicionarsala
             // 
             this.btn_adicionarsala.Location = new System.Drawing.Point(672, 319);
-            this.btn_adicionarsala.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_adicionarsala.Margin = new System.Windows.Forms.Padding(2);
             this.btn_adicionarsala.Name = "btn_adicionarsala";
             this.btn_adicionarsala.Size = new System.Drawing.Size(89, 19);
             this.btn_adicionarsala.TabIndex = 2;
@@ -96,6 +84,23 @@ namespace Proj.Gerenciamento_de_Salas
             this.btn_Voltar.UseVisualStyleBackColor = true;
             this.btn_Voltar.Click += new System.EventHandler(this.btn_Voltar_Click);
             // 
+            // n_Sala
+            // 
+            this.n_Sala.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.n_Sala.HeaderText = "Nº sala";
+            this.n_Sala.MinimumWidth = 6;
+            this.n_Sala.Name = "n_Sala";
+            this.n_Sala.ReadOnly = true;
+            // 
+            // Tipo_Sala
+            // 
+            this.Tipo_Sala.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Tipo_Sala.HeaderText = "Tipo da sala";
+            this.Tipo_Sala.MinimumWidth = 6;
+            this.Tipo_Sala.Name = "Tipo_Sala";
+            this.Tipo_Sala.ReadOnly = true;
+            this.Tipo_Sala.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // Pag_QuantidadeSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,7 +110,7 @@ namespace Proj.Gerenciamento_de_Salas
             this.Controls.Add(this.btn_adicionarsala);
             this.Controls.Add(this.btn_editarsala);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Pag_QuantidadeSalas";
             this.Text = "Pag_QuantidadeSalas";
@@ -119,10 +124,10 @@ namespace Proj.Gerenciamento_de_Salas
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn n_Sala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_Sala;
         private System.Windows.Forms.Button btn_editarsala;
         private System.Windows.Forms.Button btn_adicionarsala;
         private System.Windows.Forms.Button btn_Voltar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn n_Sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_Sala;
     }
 }
