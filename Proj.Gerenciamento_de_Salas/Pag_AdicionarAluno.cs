@@ -16,5 +16,16 @@ namespace Proj.Gerenciamento_de_Salas
         {
             InitializeComponent();
         }
+
+        public Pag_AdicionarAluno(String nome)
+        {
+            InitializeComponent();
+            PreencheDados();
+        }
+
+        private void PreencheDados()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

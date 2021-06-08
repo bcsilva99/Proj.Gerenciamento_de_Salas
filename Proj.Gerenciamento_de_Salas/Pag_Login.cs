@@ -31,5 +31,12 @@ namespace Proj.Gerenciamento_de_Salas
         {
 
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            Pag_Menu menu = new Pag_Menu();
+            this.Hide();
+            menu.Show();
+        }
     }
 }
