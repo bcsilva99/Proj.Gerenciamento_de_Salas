@@ -76,12 +76,6 @@
     <Compile Include="Pag_Configuracao.Designer.cs">
       <DependentUpon>Pag_Configuracao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pag_EditarMarcacao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pag_EditarMarcacao.Designer.cs">
-      <DependentUpon>Pag_EditarMarcacao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pag_EditarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,17 +114,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pag_AdicionarAluno.resx">
+      <DependentUpon>Pag_AdicionarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pag_AlterarSenha.resx">
+      <DependentUpon>Pag_AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pag_CadastroUsuario.resx">
       <DependentUpon>Pag_CadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pag_CalendarioMarcacao.resx">
       <DependentUpon>Pag_CalendarioMarcacao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pag_Configuracao.resx">
+      <DependentUpon>Pag_Configuracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pag_EditarPaciente.resx">
+      <DependentUpon>Pag_EditarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pag_Login.resx">
       <DependentUpon>Pag_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pag_Menu.resx">
       <DependentUpon>Pag_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pag_NovaMarcacao.resx">
+      <DependentUpon>Pag_NovaMarcacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pag_QuantidadeSalas.resx">
+      <DependentUpon>Pag_QuantidadeSalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pag_RegistroAluno.resx">
       <DependentUpon>Pag_RegistroAluno.cs</DependentUpon>

@@ -16,5 +16,38 @@ namespace Proj.Gerenciamento_de_Salas
         {
             InitializeComponent();
         }
+
+        public Pag_AdicionarAluno(String nome)
+        {
+            InitializeComponent();
+            PreencheDados();
+        }
+
+        private void PreencheDados()
+        {
+            
+        }
+
+        private void btn_Voltar_Click(object sender, EventArgs e)
+        {
+            Pag_RegistroAluno registroAluno = new Pag_RegistroAluno();
+            this.Hide();
+            registroAluno.Show();
+        }
+
+        private void Pag_AdicionarAluno_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
