@@ -37,9 +37,10 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_Calendario
             // 
-            this.btn_Calendario.Location = new System.Drawing.Point(72, 189);
+            this.btn_Calendario.Location = new System.Drawing.Point(96, 233);
+            this.btn_Calendario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Calendario.Name = "btn_Calendario";
-            this.btn_Calendario.Size = new System.Drawing.Size(117, 34);
+            this.btn_Calendario.Size = new System.Drawing.Size(156, 42);
             this.btn_Calendario.TabIndex = 0;
             this.btn_Calendario.Text = "Calendário";
             this.btn_Calendario.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_AbreConfig
             // 
-            this.btn_AbreConfig.Location = new System.Drawing.Point(533, 189);
+            this.btn_AbreConfig.Location = new System.Drawing.Point(711, 233);
+            this.btn_AbreConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_AbreConfig.Name = "btn_AbreConfig";
-            this.btn_AbreConfig.Size = new System.Drawing.Size(117, 34);
+            this.btn_AbreConfig.Size = new System.Drawing.Size(156, 42);
             this.btn_AbreConfig.TabIndex = 1;
             this.btn_AbreConfig.Text = "Configurações";
             this.btn_AbreConfig.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_RegistroAluno
             // 
-            this.btn_RegistroAluno.Location = new System.Drawing.Point(292, 189);
+            this.btn_RegistroAluno.Location = new System.Drawing.Point(389, 233);
+            this.btn_RegistroAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_RegistroAluno.Name = "btn_RegistroAluno";
-            this.btn_RegistroAluno.Size = new System.Drawing.Size(117, 34);
+            this.btn_RegistroAluno.Size = new System.Drawing.Size(156, 42);
             this.btn_RegistroAluno.TabIndex = 2;
             this.btn_RegistroAluno.Text = "Registros Alunos";
             this.btn_RegistroAluno.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_Sair
             // 
-            this.btn_Sair.Location = new System.Drawing.Point(29, 24);
+            this.btn_Sair.Location = new System.Drawing.Point(39, 30);
+            this.btn_Sair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(117, 34);
+            this.btn_Sair.Size = new System.Drawing.Size(156, 42);
             this.btn_Sair.TabIndex = 3;
             this.btn_Sair.Text = "Sair";
             this.btn_Sair.UseVisualStyleBackColor = true;
@@ -77,13 +81,14 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // Pag_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btn_Sair);
             this.Controls.Add(this.btn_RegistroAluno);
             this.Controls.Add(this.btn_AbreConfig);
             this.Controls.Add(this.btn_Calendario);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Pag_Menu";
             this.Text = "Pag_Menu";

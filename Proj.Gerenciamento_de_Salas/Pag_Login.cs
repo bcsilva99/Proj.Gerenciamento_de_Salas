@@ -33,5 +33,10 @@ namespace Proj.Gerenciamento_de_Salas
         {
             Application.Exit();
         }
+
+        private void panelLogin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

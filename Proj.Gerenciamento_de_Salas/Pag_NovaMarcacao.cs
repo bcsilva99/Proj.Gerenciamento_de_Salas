@@ -35,5 +35,10 @@ namespace Proj.Gerenciamento_de_Salas
         {
             Application.Exit();
         }
+
+        private void Pag_NovaMarcacao_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

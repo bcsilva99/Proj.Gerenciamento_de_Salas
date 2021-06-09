@@ -34,9 +34,10 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_Voltar
             // 
-            this.btn_Voltar.Location = new System.Drawing.Point(460, 29);
+            this.btn_Voltar.Location = new System.Drawing.Point(613, 36);
+            this.btn_Voltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Voltar.Name = "btn_Voltar";
-            this.btn_Voltar.Size = new System.Drawing.Size(119, 34);
+            this.btn_Voltar.Size = new System.Drawing.Size(159, 42);
             this.btn_Voltar.TabIndex = 0;
             this.btn_Voltar.Text = "Voltar";
             this.btn_Voltar.UseVisualStyleBackColor = true;
@@ -44,16 +45,17 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // Pag_NovaMarcacao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_Voltar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Pag_NovaMarcacao";
             this.Text = "Pag_NovaMarcacao";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_NovaMarcacao_FormClosing);
+            this.Load += new System.EventHandler(this.Pag_NovaMarcacao_Load);
             this.ResumeLayout(false);
 
         }

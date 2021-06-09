@@ -28,5 +28,20 @@ namespace Proj.Gerenciamento_de_Salas
         {
             Application.Exit();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelAlterarSenha_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Pag_AlterarSenha_Load(object sender, EventArgs e)
+        {
+            panelAlterarSenha.Location = new Point((this.Width / 2) - 200, (this.Height / 2) - 165);
+        }
     }
 }

@@ -41,17 +41,19 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // txt_Senha
             // 
-            this.txt_Senha.Location = new System.Drawing.Point(125, 87);
+            this.txt_Senha.Location = new System.Drawing.Point(167, 107);
+            this.txt_Senha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Senha.Name = "txt_Senha";
             this.txt_Senha.PasswordChar = '*';
-            this.txt_Senha.Size = new System.Drawing.Size(273, 20);
-            this.txt_Senha.TabIndex = 1;            
+            this.txt_Senha.Size = new System.Drawing.Size(363, 22);
+            this.txt_Senha.TabIndex = 1;
             // 
             // btn_Login
             // 
-            this.btn_Login.Location = new System.Drawing.Point(139, 321);
+            this.btn_Login.Location = new System.Drawing.Point(185, 395);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(129, 23);
+            this.btn_Login.Size = new System.Drawing.Size(172, 28);
             this.btn_Login.TabIndex = 2;
             this.btn_Login.Text = "Entrar";
             this.btn_Login.UseVisualStyleBackColor = true;
@@ -59,11 +61,11 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // txt_Login
             // 
-            this.txt_Login.Location = new System.Drawing.Point(125, 55);
-            this.txt_Login.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Login.Location = new System.Drawing.Point(167, 68);
+            this.txt_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Login.Name = "txt_Login";
-            this.txt_Login.Size = new System.Drawing.Size(273, 20);
-            this.txt_Login.TabIndex = 3;           
+            this.txt_Login.Size = new System.Drawing.Size(363, 22);
+            this.txt_Login.TabIndex = 3;
             // 
             // panelLogin
             // 
@@ -73,17 +75,19 @@ namespace Proj.Gerenciamento_de_Salas
             this.panelLogin.Controls.Add(this.txt_Login);
             this.panelLogin.Controls.Add(this.btn_Login);
             this.panelLogin.Controls.Add(this.txt_Senha);
-            this.panelLogin.Location = new System.Drawing.Point(154, 53);
-            this.panelLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogin.Location = new System.Drawing.Point(205, 65);
+            this.panelLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(400, 348);
-            this.panelLogin.TabIndex = 4;           
+            this.panelLogin.Size = new System.Drawing.Size(533, 428);
+            this.panelLogin.TabIndex = 4;
+            this.panelLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogin_Paint);
             // 
             // btn_EsqueciSenha
             // 
-            this.btn_EsqueciSenha.Location = new System.Drawing.Point(4, 321);
+            this.btn_EsqueciSenha.Location = new System.Drawing.Point(5, 395);
+            this.btn_EsqueciSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_EsqueciSenha.Name = "btn_EsqueciSenha";
-            this.btn_EsqueciSenha.Size = new System.Drawing.Size(129, 23);
+            this.btn_EsqueciSenha.Size = new System.Drawing.Size(172, 28);
             this.btn_EsqueciSenha.TabIndex = 6;
             this.btn_EsqueciSenha.Text = "Esqueci a Senha";
             this.btn_EsqueciSenha.UseVisualStyleBackColor = true;
@@ -92,10 +96,9 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 89);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(72, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 17);
+            this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Senha:";
             // 
@@ -103,19 +106,19 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 57);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(59, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Usuário:";
             // 
             // Pag_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 472);
+            this.ClientSize = new System.Drawing.Size(1043, 581);
             this.Controls.Add(this.panelLogin);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Pag_Login";

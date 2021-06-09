@@ -49,5 +49,10 @@ namespace Proj.Gerenciamento_de_Salas
         {
             Application.Exit();
         }
+
+        private void Pag_Configuracao_Load(object sender, EventArgs e)
+        {
+            panelConfig.Location = new Point((this.Width / 2) - 274, (this.Height / 2) - 192);
+        }
     }
 }
