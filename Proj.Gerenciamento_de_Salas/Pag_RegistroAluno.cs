@@ -20,16 +20,16 @@ namespace Proj.Gerenciamento_de_Salas
 
         private void btn_AdicionarAluno_Click(object sender, EventArgs e)
         {
-            Pag_AdicionarAluno adicionarAluno = new Pag_AdicionarAluno();
-            this.Hide();
-            adicionarAluno.Show();
+            Pag_AdicionarAluno adicionarAluno = new Pag_AdicionarAluno();            
+            this.Enabled = false;
+            adicionarAluno.Show(); 
         }
 
         private void btn_EditarAluno_Click(object sender, EventArgs e)
         {
             String nome = txt_PesquisaAluno.Text;
             Pag_AdicionarAluno editaAluno = new Pag_AdicionarAluno(nome);
-            this.Hide();
+            this.Enabled = false;
             editaAluno.Show();
         }
 

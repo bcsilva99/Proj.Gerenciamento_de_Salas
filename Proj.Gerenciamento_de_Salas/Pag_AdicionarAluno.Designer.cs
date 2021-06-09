@@ -34,18 +34,22 @@ namespace Proj.Gerenciamento_de_Salas
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelNome = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelTelefone = new System.Windows.Forms.Label();
+            this.labelDia = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
             this.btn_Salvar = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBoxDia = new System.Windows.Forms.ComboBox();
+            this.comboBoxTurno = new System.Windows.Forms.ComboBox();
+            this.labelTurno = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Voltar
             // 
-            this.btn_Voltar.Location = new System.Drawing.Point(675, 12);
+            this.btn_Voltar.Location = new System.Drawing.Point(3, 3);
             this.btn_Voltar.Name = "btn_Voltar";
             this.btn_Voltar.Size = new System.Drawing.Size(119, 34);
             this.btn_Voltar.TabIndex = 1;
@@ -57,116 +61,160 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             this.textBox1.Location = new System.Drawing.Point(62, 93);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(358, 20);
+            this.textBox1.Size = new System.Drawing.Size(410, 20);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(62, 279);
+            this.textBox2.Location = new System.Drawing.Point(62, 228);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(358, 20);
+            this.textBox2.Size = new System.Drawing.Size(248, 20);
             this.textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(62, 341);
+            this.textBox3.Location = new System.Drawing.Point(62, 287);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(358, 20);
+            this.textBox3.Size = new System.Drawing.Size(248, 20);
             this.textBox3.TabIndex = 4;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(62, 143);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(358, 20);
+            this.textBox5.Size = new System.Drawing.Size(410, 20);
             this.textBox5.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // labelNome
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(509, 111);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.labelNome.AutoSize = true;
+            this.labelNome.Location = new System.Drawing.Point(59, 77);
+            this.labelNome.Name = "labelNome";
+            this.labelNome.Size = new System.Drawing.Size(35, 13);
+            this.labelNome.TabIndex = 8;
+            this.labelNome.Text = "Nome";
             // 
-            // label1
+            // labelEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(59, 127);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(32, 13);
+            this.labelEmail.TabIndex = 9;
+            this.labelEmail.Text = "Email";
             // 
-            // label2
+            // labelTelefone
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 127);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelTelefone.AutoSize = true;
+            this.labelTelefone.Location = new System.Drawing.Point(59, 210);
+            this.labelTelefone.Name = "labelTelefone";
+            this.labelTelefone.Size = new System.Drawing.Size(49, 13);
+            this.labelTelefone.TabIndex = 10;
+            this.labelTelefone.Text = "Telefone";
             // 
-            // label3
+            // labelDia
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 248);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "label3";
+            this.labelDia.AutoSize = true;
+            this.labelDia.Location = new System.Drawing.Point(394, 210);
+            this.labelDia.Name = "labelDia";
+            this.labelDia.Size = new System.Drawing.Size(112, 13);
+            this.labelDia.TabIndex = 11;
+            this.labelDia.Text = "Dia de Disponibilidade";
             // 
-            // label4
+            // labelID
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(506, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 325);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "label5";
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(59, 271);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(43, 13);
+            this.labelID.TabIndex = 12;
+            this.labelID.Text = "ID PUC";
             // 
             // btn_Salvar
             // 
-            this.btn_Salvar.Location = new System.Drawing.Point(577, 450);
+            this.btn_Salvar.Location = new System.Drawing.Point(130, 3);
             this.btn_Salvar.Name = "btn_Salvar";
             this.btn_Salvar.Size = new System.Drawing.Size(119, 34);
             this.btn_Salvar.TabIndex = 13;
-            this.btn_Salvar.Text = "Voltar";
+            this.btn_Salvar.Text = "Salvar";
             this.btn_Salvar.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btn_Salvar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Voltar, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(524, 453);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(255, 45);
+            this.tableLayoutPanel1.TabIndex = 14;
+            // 
+            // comboBoxDia
+            // 
+            this.comboBoxDia.FormattingEnabled = true;
+            this.comboBoxDia.Items.AddRange(new object[] {
+            "Segunda- feira",
+            "Terça-feira",
+            "Quarta-feira",
+            "Quinta-feira",
+            "Sexta-feira",
+            "Sábado"});
+            this.comboBoxDia.Location = new System.Drawing.Point(397, 226);
+            this.comboBoxDia.Name = "comboBoxDia";
+            this.comboBoxDia.Size = new System.Drawing.Size(185, 21);
+            this.comboBoxDia.TabIndex = 15;
+            // 
+            // comboBoxTurno
+            // 
+            this.comboBoxTurno.FormattingEnabled = true;
+            this.comboBoxTurno.Items.AddRange(new object[] {
+            "Pela Manhã",
+            "Pela Tarde"});
+            this.comboBoxTurno.Location = new System.Drawing.Point(397, 287);
+            this.comboBoxTurno.Name = "comboBoxTurno";
+            this.comboBoxTurno.Size = new System.Drawing.Size(185, 21);
+            this.comboBoxTurno.TabIndex = 17;
+            // 
+            // labelTurno
+            // 
+            this.labelTurno.AutoSize = true;
+            this.labelTurno.Location = new System.Drawing.Point(394, 271);
+            this.labelTurno.Name = "labelTurno";
+            this.labelTurno.Size = new System.Drawing.Size(124, 13);
+            this.labelTurno.TabIndex = 16;
+            this.labelTurno.Text = "Turno de Disponibilidade";
             // 
             // Pag_AdicionarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 510);
-            this.Controls.Add(this.btn_Salvar);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ControlBox = false;
+            this.Controls.Add(this.comboBoxTurno);
+            this.Controls.Add(this.labelTurno);
+            this.Controls.Add(this.comboBoxDia);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.labelDia);
+            this.Controls.Add(this.labelTelefone);
+            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.labelNome);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btn_Voltar);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(844, 549);
+            this.MinimumSize = new System.Drawing.Size(844, 549);
             this.Name = "Pag_AdicionarAluno";
-            this.Text = "Pag_AdicionarAluno";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_AdicionarAluno_FormClosing);
+            this.ShowInTaskbar = false;
+            this.Text = "Pag_AdicionarAluno";            
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,12 +227,15 @@ namespace Proj.Gerenciamento_de_Salas
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelNome;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelTelefone;
+        private System.Windows.Forms.Label labelDia;
+        private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.Button btn_Salvar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ComboBox comboBoxDia;
+        private System.Windows.Forms.ComboBox comboBoxTurno;
+        private System.Windows.Forms.Label labelTurno;
     }
 }

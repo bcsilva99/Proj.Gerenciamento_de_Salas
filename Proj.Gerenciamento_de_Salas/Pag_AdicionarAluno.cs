@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proj.Gerenciamento_de_Salas
 {
     public partial class Pag_AdicionarAluno : Form
-    {
-        public Pag_AdicionarAluno()
+    {      
+
+        public Pag_AdicionarAluno()   
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         public Pag_AdicionarAluno(String nome)
@@ -35,19 +29,7 @@ namespace Proj.Gerenciamento_de_Salas
             registroAluno.Show();
         }
 
-        private void Pag_AdicionarAluno_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+     
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
