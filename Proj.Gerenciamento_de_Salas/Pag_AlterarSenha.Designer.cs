@@ -45,10 +45,9 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_Voltar
             // 
-            this.btn_Voltar.Location = new System.Drawing.Point(608, 15);
-            this.btn_Voltar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Voltar.Location = new System.Drawing.Point(456, 12);
             this.btn_Voltar.Name = "btn_Voltar";
-            this.btn_Voltar.Size = new System.Drawing.Size(159, 42);
+            this.btn_Voltar.Size = new System.Drawing.Size(119, 34);
             this.btn_Voltar.TabIndex = 1;
             this.btn_Voltar.Text = "Voltar";
             this.btn_Voltar.UseVisualStyleBackColor = true;
@@ -57,9 +56,10 @@ namespace Proj.Gerenciamento_de_Salas
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Location = new System.Drawing.Point(71, 17);
+            this.labelUsuario.Location = new System.Drawing.Point(53, 14);
+            this.labelUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(65, 17);
+            this.labelUsuario.Size = new System.Drawing.Size(49, 13);
             this.labelUsuario.TabIndex = 2;
             this.labelUsuario.Text = "Usuário :";
             // 
@@ -74,64 +74,72 @@ namespace Proj.Gerenciamento_de_Salas
             this.panelAlterarSenha.Controls.Add(this.labelNovaSenha);
             this.panelAlterarSenha.Controls.Add(this.label1);
             this.panelAlterarSenha.Controls.Add(this.labelUsuario);
-            this.panelAlterarSenha.Location = new System.Drawing.Point(118, 110);
+            this.panelAlterarSenha.Location = new System.Drawing.Point(88, 89);
+            this.panelAlterarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelAlterarSenha.Name = "panelAlterarSenha";
-            this.panelAlterarSenha.Size = new System.Drawing.Size(484, 230);
+            this.panelAlterarSenha.Size = new System.Drawing.Size(363, 187);
             this.panelAlterarSenha.TabIndex = 3;
             this.panelAlterarSenha.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAlterarSenha_Paint);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(368, 188);
+            this.btnSalvar.Location = new System.Drawing.Point(276, 153);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(113, 39);
+            this.btnSalvar.Size = new System.Drawing.Size(85, 32);
             this.btnSalvar.TabIndex = 10;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // txtConfimaSenha
             // 
-            this.txtConfimaSenha.Location = new System.Drawing.Point(166, 98);
+            this.txtConfimaSenha.Location = new System.Drawing.Point(124, 80);
+            this.txtConfimaSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfimaSenha.Name = "txtConfimaSenha";
-            this.txtConfimaSenha.Size = new System.Drawing.Size(315, 22);
+            this.txtConfimaSenha.Size = new System.Drawing.Size(237, 20);
             this.txtConfimaSenha.TabIndex = 9;
             // 
             // txtNovaSenha
             // 
-            this.txtNovaSenha.Location = new System.Drawing.Point(166, 70);
+            this.txtNovaSenha.Location = new System.Drawing.Point(124, 57);
+            this.txtNovaSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNovaSenha.Name = "txtNovaSenha";
-            this.txtNovaSenha.Size = new System.Drawing.Size(315, 22);
+            this.txtNovaSenha.Size = new System.Drawing.Size(237, 20);
             this.txtNovaSenha.TabIndex = 8;
             // 
             // TxtSenha
             // 
-            this.TxtSenha.Location = new System.Drawing.Point(166, 42);
+            this.TxtSenha.Location = new System.Drawing.Point(124, 34);
+            this.TxtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtSenha.Name = "TxtSenha";
-            this.TxtSenha.Size = new System.Drawing.Size(315, 22);
+            this.TxtSenha.Size = new System.Drawing.Size(237, 20);
             this.TxtSenha.TabIndex = 7;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(166, 14);
+            this.txtUsuario.Location = new System.Drawing.Point(124, 11);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(315, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(237, 20);
             this.txtUsuario.TabIndex = 6;
             // 
             // labelConfirmarSenha
             // 
             this.labelConfirmarSenha.AutoSize = true;
-            this.labelConfirmarSenha.Location = new System.Drawing.Point(14, 101);
+            this.labelConfirmarSenha.Location = new System.Drawing.Point(10, 82);
+            this.labelConfirmarSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelConfirmarSenha.Name = "labelConfirmarSenha";
-            this.labelConfirmarSenha.Size = new System.Drawing.Size(122, 17);
+            this.labelConfirmarSenha.Size = new System.Drawing.Size(91, 13);
             this.labelConfirmarSenha.TabIndex = 5;
             this.labelConfirmarSenha.Text = "Confirmar Senha :";
             // 
             // labelNovaSenha
             // 
             this.labelNovaSenha.AutoSize = true;
-            this.labelNovaSenha.Location = new System.Drawing.Point(42, 73);
+            this.labelNovaSenha.Location = new System.Drawing.Point(32, 59);
+            this.labelNovaSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNovaSenha.Name = "labelNovaSenha";
-            this.labelNovaSenha.Size = new System.Drawing.Size(94, 17);
+            this.labelNovaSenha.Size = new System.Drawing.Size(73, 13);
             this.labelNovaSenha.TabIndex = 4;
             this.labelNovaSenha.Text = "Nova Senha :";
             this.labelNovaSenha.Click += new System.EventHandler(this.label2_Click);
@@ -139,20 +147,21 @@ namespace Proj.Gerenciamento_de_Salas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 45);
+            this.label1.Location = new System.Drawing.Point(59, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Senha :";
             // 
             // Pag_AlterarSenha
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.panelAlterarSenha);
             this.Controls.Add(this.btn_Voltar);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Pag_AlterarSenha";
             this.Text = "Pag_AlterarSenha";

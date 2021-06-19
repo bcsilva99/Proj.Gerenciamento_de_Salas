@@ -20,7 +20,7 @@ namespace Proj.Gerenciamento_de_Salas
         private void btn_NovaMarcacao_Click(object sender, EventArgs e)
         {
             Pag_NovaMarcacao novaMarcacao = new Pag_NovaMarcacao();
-            this.Hide();
+            this.Enabled=false;
             novaMarcacao.Show();
         }
 
@@ -28,14 +28,14 @@ namespace Proj.Gerenciamento_de_Salas
         {
             String chaveBusca = tbl_Calendario.SelectedRows.ToString();
             Pag_NovaMarcacao editarMarcacao = new Pag_NovaMarcacao(chaveBusca);
-            this.Hide();
+            this.Enabled=false;
             editarMarcacao.Show();
         }
 
         private void btn_EditarPaciente_Click(object sender, EventArgs e)
         {
             Pag_EditarPaciente editarPaciente = new Pag_EditarPaciente();
-            this.Hide();
+            this.Enabled=false;
             editarPaciente.Show();
         }
 

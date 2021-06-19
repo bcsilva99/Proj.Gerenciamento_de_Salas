@@ -210,10 +210,11 @@ namespace Proj.Gerenciamento_de_Salas
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(844, 549);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(844, 549);
             this.Name = "Pag_AdicionarAluno";
             this.ShowInTaskbar = false;
-            this.Text = "Pag_AdicionarAluno";            
+            this.Text = "Pag_AdicionarAluno";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
