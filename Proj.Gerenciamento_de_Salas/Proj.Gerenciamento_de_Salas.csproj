@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdicionarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdicionarSala.Designer.cs">
+      <DependentUpon>AdicionarSala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pag_AdicionarAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdicionarSala.resx">
+      <DependentUpon>AdicionarSala.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pag_AdicionarAluno.resx">
       <DependentUpon>Pag_AdicionarAluno.cs</DependentUpon>
     </EmbeddedResource>
