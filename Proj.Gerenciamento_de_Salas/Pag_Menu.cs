@@ -49,5 +49,10 @@ namespace Proj.Gerenciamento_de_Salas
         {
             Application.Exit();
         }
+
+        private void Pag_Menu_Load(object sender, EventArgs e)
+        {
+            panelMenu.Location = new Point((this.Width / 2) - 285, (this.Height / 2) - 26);
+        }
     }
 }

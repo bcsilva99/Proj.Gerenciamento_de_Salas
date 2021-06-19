@@ -33,12 +33,14 @@ namespace Proj.Gerenciamento_de_Salas
             this.btn_AbreConfig = new System.Windows.Forms.Button();
             this.btn_RegistroAluno = new System.Windows.Forms.Button();
             this.btn_Sair = new System.Windows.Forms.Button();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Calendario
             // 
-            this.btn_Calendario.Location = new System.Drawing.Point(96, 233);
-            this.btn_Calendario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Calendario.Location = new System.Drawing.Point(4, 4);
+            this.btn_Calendario.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Calendario.Name = "btn_Calendario";
             this.btn_Calendario.Size = new System.Drawing.Size(156, 42);
             this.btn_Calendario.TabIndex = 0;
@@ -48,8 +50,8 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_AbreConfig
             // 
-            this.btn_AbreConfig.Location = new System.Drawing.Point(711, 233);
-            this.btn_AbreConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AbreConfig.Location = new System.Drawing.Point(610, 4);
+            this.btn_AbreConfig.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AbreConfig.Name = "btn_AbreConfig";
             this.btn_AbreConfig.Size = new System.Drawing.Size(156, 42);
             this.btn_AbreConfig.TabIndex = 1;
@@ -59,8 +61,8 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_RegistroAluno
             // 
-            this.btn_RegistroAluno.Location = new System.Drawing.Point(389, 233);
-            this.btn_RegistroAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RegistroAluno.Location = new System.Drawing.Point(315, 4);
+            this.btn_RegistroAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RegistroAluno.Name = "btn_RegistroAluno";
             this.btn_RegistroAluno.Size = new System.Drawing.Size(156, 42);
             this.btn_RegistroAluno.TabIndex = 2;
@@ -70,8 +72,8 @@ namespace Proj.Gerenciamento_de_Salas
             // 
             // btn_Sair
             // 
-            this.btn_Sair.Location = new System.Drawing.Point(39, 30);
-            this.btn_Sair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Sair.Location = new System.Drawing.Point(898, 32);
+            this.btn_Sair.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Sair.Name = "btn_Sair";
             this.btn_Sair.Size = new System.Drawing.Size(156, 42);
             this.btn_Sair.TabIndex = 3;
@@ -79,21 +81,31 @@ namespace Proj.Gerenciamento_de_Salas
             this.btn_Sair.UseVisualStyleBackColor = true;
             this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
             // 
+            // panelMenu
+            // 
+            this.panelMenu.Controls.Add(this.btn_Calendario);
+            this.panelMenu.Controls.Add(this.btn_RegistroAluno);
+            this.panelMenu.Controls.Add(this.btn_AbreConfig);
+            this.panelMenu.Location = new System.Drawing.Point(96, 282);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(770, 52);
+            this.panelMenu.TabIndex = 4;
+            // 
             // Pag_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.btn_Sair);
-            this.Controls.Add(this.btn_RegistroAluno);
-            this.Controls.Add(this.btn_AbreConfig);
-            this.Controls.Add(this.btn_Calendario);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Pag_Menu";
             this.Text = "Pag_Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_Menu_FormClosing);
+            this.Load += new System.EventHandler(this.Pag_Menu_Load);
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -104,5 +116,6 @@ namespace Proj.Gerenciamento_de_Salas
         private System.Windows.Forms.Button btn_AbreConfig;
         private System.Windows.Forms.Button btn_RegistroAluno;
         private System.Windows.Forms.Button btn_Sair;
+        private System.Windows.Forms.Panel panelMenu;
     }
 }
