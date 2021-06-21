@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdicionarSala.cs">
+    <Compile Include="Pag_AdicionarSala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdicionarSala.Designer.cs">
-      <DependentUpon>AdicionarSala.cs</DependentUpon>
+    <Compile Include="Pag_AdicionarSala.Designer.cs">
+      <DependentUpon>Pag_AdicionarSala.cs</DependentUpon>
     </Compile>
     <Compile Include="Pag_AdicionarAluno.cs">
       <SubType>Form</SubType>
@@ -120,8 +120,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdicionarSala.resx">
-      <DependentUpon>AdicionarSala.cs</DependentUpon>
+    <EmbeddedResource Include="Pag_AdicionarSala.resx">
+      <DependentUpon>Pag_AdicionarSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pag_AdicionarAluno.resx">
       <DependentUpon>Pag_AdicionarAluno.cs</DependentUpon>

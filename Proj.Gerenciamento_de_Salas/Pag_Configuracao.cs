@@ -20,7 +20,7 @@ namespace Proj.Gerenciamento_de_Salas
         private void btn_AlteraSenha_Click(object sender, EventArgs e)
         {
             Pag_AlterarSenha alterarSenha = new Pag_AlterarSenha();
-            this.Hide();
+            this.Enabled=false;
             alterarSenha.Show();
         }
 
@@ -34,7 +34,7 @@ namespace Proj.Gerenciamento_de_Salas
         private void btn_NovoUsuário_Click(object sender, EventArgs e)
         {
             Pag_CadastroUsuario cadastroUsuario = new Pag_CadastroUsuario();
-            this.Hide();
+            this.Enabled=false;
             cadastroUsuario.Show();
         }
 

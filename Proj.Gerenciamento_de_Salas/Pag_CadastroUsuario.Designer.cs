@@ -175,11 +175,15 @@ namespace Proj.Gerenciamento_de_Salas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 359);
+            this.ControlBox = false;
             this.Controls.Add(this.panelAlterarSenha);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(533, 398);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(533, 398);
             this.Name = "Pag_CadastroUsuario";
+            this.ShowIcon = false;
             this.Text = "Pag_CadastroUsuario";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pag_CadastroUsuario_FormClosing);
             this.panelAlterarSenha.ResumeLayout(false);
             this.panelAlterarSenha.PerformLayout();
